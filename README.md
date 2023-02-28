@@ -1,4 +1,4 @@
-# Another Sample Plugin
+# Modular Sample Plugin
 
 This is an alternative sample plugin for [Obsidian MD](https://obsidian.md). 
 
