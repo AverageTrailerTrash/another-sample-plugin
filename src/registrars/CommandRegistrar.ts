@@ -9,7 +9,7 @@ import { sampleEditorCommand } from "../functions/commands/SampleEditorCommand";
 export function registerAllCommands(myPlugin: Plugin) {
     
     // This adds a simple command that can be triggered anywhere
-    this.addCommand({
+    myPlugin.addCommand({
         id: "open-sample-modal-simple",
         name: "Open Sample Modal (Simple)",
         callback: () => {
@@ -18,7 +18,7 @@ export function registerAllCommands(myPlugin: Plugin) {
     });
 
     // This adds a complex command that can check whether the current state of the app allows the execution of the command.
-    this.addCommand({
+    myPlugin.addCommand({
         id: "open-sample-modal-complex",
         name: "Open Sample Modal (Complex)",
         checkCallback: (checking: boolean) => {
@@ -40,7 +40,7 @@ export function registerAllCommands(myPlugin: Plugin) {
     });
     
     // This adds an editor command that can perform operations on the current editor instance.
-    this.addCommand({
+    myPlugin.addCommand({
         id: "sample-editor-command",
         name: "Sample Editor Command",
         editorCallback: (editor: Editor, view: MarkdownView) => {
