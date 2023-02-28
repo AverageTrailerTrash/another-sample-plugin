@@ -18,19 +18,19 @@ So if you have any advice about best practices that won't make the development p
 
 Code is ~70% done? 
 
-  Original code is broken down to a useful enough degree that the plugins I'm working on are based off this.
+* Original code is broken down to a useful enough degree that the plugins I'm working on are based off this.
 
-  But there is still a bit more to breakdown, some cleanup needed. 
+* But there is still a bit more to breakdown, some cleanup needed. 
 
-  I'd like to add more comments and console.debugs() to help beginners notice when things are firing.
+* I'd like to add more comments and console.debugs() to help beginners notice when things are firing.
 
 Documentation (not in this repo) is more like 25%. 
 
-  I have a general tutorial that's almost done that can be followed with either the original repo or this version.
+* I have a general tutorial that's almost done that can be followed with either the original repo or this version.
 
-  However, I don't have any documentation that is specific to this repository.
+* However, I don't have any documentation that is specific to this repository.
   
-  A video breaking down the code structure and explaining why things work how they do might be nice.
+* A video breaking down the code structure and explaining why things work how they do might be nice.
 
 **Notes**: 
 
