@@ -1,23 +1,48 @@
-# Obsidian Sample Plugin
+# Another Sample Plugin
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+This is an alternative sample plugin for [Obsidian MD](https://obsidian.md). 
 
-This project uses Typescript to provide type checking and documentation.
-The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definition format, which contains TSDoc comments describing what it does.
+It is based on [the official sample plugin](https://github.com/obsidianmd/obsidian-sample-plugin), with a few notable differences:
 
-**Note:** The Obsidian API is still in early alpha and is subject to change at any time!
+* The code is restructured and spread across multiple files. A modular layout better reflects the way plugin developers are actually setting up their code bases and makes the content less overwhelming to navigate.
 
-This sample plugin demonstrates some of the basic functionality the plugin API can do.
-- Changes the default font color to red using `styles.css`.
-- Adds a ribbon icon, which shows a Notice when clicked.
-- Adds a command "Open Sample Modal" which opens a Modal.
-- Adds a plugin setting tab to the settings page.
-- Registers a global click event and output 'click' to the console.
-- Registers a global interval which logs 'setInterval' to the console.
+* The code uses more descriptive names and additional examples to help clarify what can and can't be customized and in what way.
+
+* In the future, the setup tutorial will be geared towards new developers who may not know how to use the terminal, have the required dependencies, nor have appropriate software for getting started. Though basic coding knowledge is assumed.
+
+I am a new plugin developer myself and am making this because it feels like there is a gap in the available resources, not necessarily because I'm the best person to produce it. 
+
+So if you have any advice about best practices that won't make the development process more overwhelming, or recommendations about file structure etc., feel free to open an Issue or Discussion. Let's chat about it.
+
+**Status**:
+
+Code is ~70% done? 
+
+  Original code is broken down to a useful enough degree that the plugins I'm working on are based off this.
+
+  But there is still a bit more to breakdown, some cleanup needed. 
+
+  I'd like to add more comments and console.debugs() to help beginners notice when things are firing.
+
+Documentation (not in this repo) is more like 25%. 
+
+  I have a general tutorial that's almost done that can be followed with either the original repo or this version.
+
+  However, I don't have any documentation that is specific to this repository.
+  
+  A video breaking down the code structure and explaining why things work how they do might be nice.
+
+**Notes**: 
+
+* This project uses Typescript to provide type checking and documentation.
+
+* The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definition format, which contains TSDoc comments describing what it does.
+
+* The Obsidian API is still in early alpha and is subject to change at any time!
 
 ## First time developing plugins?
 
-Quick starting guide for new plugin devs:
+Quick starting guide for new plugin devs, from the original repo:
 
 - Check if [someone already developed a plugin for what you want](https://obsidian.md/plugins)! There might be an existing plugin similar enough that you can partner up with.
 - Make a copy of this repo as a template with the "Use this template" button (login to GitHub if you don't see it).
